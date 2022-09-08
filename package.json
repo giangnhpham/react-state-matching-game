@@ -7,9 +7,9 @@
     "react-dom": "^16.13.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --open --mode development --env.entryDir=src",
-    "start-refactor": "webpack-dev-server --open --mode development --env.entryDir=refactor",
-    "build": "webpack --mode development --config webpack.config.js",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --open --mode development --env.entryDir=src",
+    "start-refactor": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --open --mode development --env.entryDir=refactor",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode development --config webpack.config.js",
     "test": "jest",
     "test:module-2": "jest test/module-2/",
     "test:module-3": "jest test/module-3/",
